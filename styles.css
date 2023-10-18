@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden; 
+  background: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+  background-size: 400% 400%;
+  animation: gradientAnimation 5s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.slider-container {
+  position: relative;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 1s ease-in-out; 
+}
+.slides:nth-child(1) {
+  transition: opacity 0.1s ease-in-out; 
+}
+
+.slides:nth-child(2) {
+  transition: transform 0.1s cubic-bezier(0.68, -0.55, 0.27, 1.55); 
+}
+
+.slides:nth-child(3) {
+  transition: transform 0.1s linear; 
+}
+
+.slides:nth-child(4) {
+  transition: transform 0.1s ease-out;
+}
+
+.slide:nth-child(5) {
+  transition: transform 0.1s ease-in;
+}
+
+.slides:nth-child(6) {
+  transition: transform 0.1s ease-in-out, opacity 0.6s linear; 
+}
+
+
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  max-width: 952px;
+  height: 400px;
+  border-radius: 15px;
+  border: 2rem solid #f2f2f2;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color:#9932cc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  outline: none;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .slider-container {
+      max-width: 100%;
+      margin: 1rem;
+  }
+
+  .slide img {
+      height: auto;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer span {
+  font-style: italic;
+  font-weight: bold;
+}
