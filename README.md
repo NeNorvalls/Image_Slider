@@ -1,4 +1,3 @@
-# Image_Slider
 # Image Slider Project
 
 ## Overview
