@@ -1,11 +1,13 @@
 # Image Slider Project
 
-[Watch the Demo Video](./images/Flashback%20-%20Oct%2018,%202023%2019_58_50.mp4)
+![Image Slider](/images/ImageSliderCover.jpg)
+
+[Visit My Project on Netlify](https://nenorvalls-image-slider.netlify.app/)
 
 ## Overview
 
 This project is a simple and visually appealing image slider implemented using HTML, CSS, and JavaScript. The slider allows you to navigate through a series of images with smooth transition effects.
-[Visit My Project on Netlify](https://nenorvalls-image-slider.netlify.app/)
+
 
 ## Features
 
